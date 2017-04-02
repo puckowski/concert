@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+title: Concert
+description: Concert is an imperative, concurrent scripting language
+show_downloads: true
