@@ -1,13 +1,13 @@
-## Types
+# Types
 
-# Primitive types
+## Primitive types
 
 int
 double
 string
 mutex
 
-# Declaration
+## Declaration
 
 ```cpp
 int x;
