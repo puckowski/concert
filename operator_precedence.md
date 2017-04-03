@@ -2,13 +2,14 @@
   
 | Precedence | Operator | Description                 |
 |:-----------|:---------|:----------------------------|
-|1           |<<        |Bitwise left shift           |
-|1           |>>        |Bitwise right shift          |
-|2           |*         |Multiplication               |
-|2           |/         |Division                     |
-|2           |%         |Remainder                    |
-|3           |+         |Addition                     |
-|3           |-         |Subtraction                  |
-|4           ||         |Bitwise OR                   |
-|4           |&         |Bitwise AND                  |
-|4           |^         |Bitwise XOR                  |
+|1           |[]        |Subscript                    |
+|2           |<<        |Bitwise left shift           |
+|2           |>>        |Bitwise right shift          |
+|3           |*         |Multiplication               |
+|3           |/         |Division                     |
+|3           |%         |Remainder                    |
+|4           |+         |Addition                     |
+|4           |-         |Subtraction                  |
+|5           ||         |Bitwise OR                   |
+|5           |&         |Bitwise AND                  |
+|5           |^         |Bitwise XOR                  |
