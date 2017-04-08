@@ -23,3 +23,5 @@
 |catch    |catch an exception after a try block                         |
 |try      |try executing potentially unsafe code                        |
 |break    |seek to next end keyword                                     |
+|const    |const value declaration                                      |
+|else     |if statement alternative branch declaration                  |
