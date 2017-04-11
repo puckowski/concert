@@ -10,6 +10,6 @@
 |3           |%         |Remainder                    |
 |4           |+         |Addition                     |
 |4           |-         |Subtraction                  |
-|5           ||         |Bitwise OR                   |
+|5           |\|         |Bitwise OR                   |
 |5           |&         |Bitwise AND                  |
 |5           |^         |Bitwise XOR                  |
