@@ -1,6 +1,6 @@
 ![Concert Header Image](https://raw.githubusercontent.com/puckowski/concert/master/Concert_Header.png)
 
-# Reference of language constructs
+# Reference
 
 ## Basic concepts
 
