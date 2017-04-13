@@ -25,3 +25,4 @@
 |break    |seek to next end keyword                                     |
 |const    |const value declaration                                      |
 |else     |if statement alternative branch declaration                  |
+|system   |execute system command                                       |
