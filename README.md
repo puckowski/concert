@@ -1,11 +1,5 @@
 ![Concert Header Image](https://raw.githubusercontent.com/puckowski/concert/master/Concert_Header.png)
 
-<details>
-<summary>
-Click to expand snippet
-</summary>
-<p>
-
 ```cpp
 import string;
 
@@ -42,8 +36,6 @@ int hash;
 
 call adler32 : WELCOME, welcomeLength -&gt; hash;
 ```
-</p>
-</details>
 
 # Reference
 
