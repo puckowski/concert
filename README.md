@@ -2,13 +2,19 @@
 
 # Reference of language constructs
 
-[Types](types.md)
+## Basic concepts
 
-[Keywords](keywords.md)
+[Types](types.md)
 
 [Comments](commands.md)
 
 [Identifiers](identifiers.md)
+
+[Scope](scope.md)
+
+## [Keywords](keywords.md)
+
+## Expressions
 
 [Assignment](assignment.md)
 
@@ -16,8 +22,8 @@
 
 [Comparison](comparison.md)
 
-[Scope](scope.md)
+## Functions
 
 [Functions](functions.md)
 
-[Standard library](standard_library.md)
+## [Standard library](standard_library.md)
