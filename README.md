@@ -5,6 +5,7 @@ import string;
 
 const string WELCOME = "Hello, world!";
 
+# Adler-32 is a checksum algorithm which was invented by Mark Adler in 1995.
 function adler32 : string as message, int as messageLength -> hash;
   const int DIVISOR = 65521;
 
