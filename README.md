@@ -12,7 +12,9 @@
 
 [Scope](scope.md)
 
-## [Keywords](keywords.md)
+## Keywords
+
+[Keywords](keywords.md)
 
 ## Expressions
 
@@ -26,4 +28,6 @@
 
 [Functions](functions.md)
 
-## [Standard library](standard_library.md)
+## Standard library
+
+[Standard library](standard_library.md)
