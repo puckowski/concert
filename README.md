@@ -1,6 +1,6 @@
 ![Concert Header Image](https://raw.githubusercontent.com/puckowski/concert/master/Concert_Header.png)
 
-[Jump to reference](#referenceStart)
+### [Jump to reference](#referenceStart)
 
 ```cpp
 import string;
