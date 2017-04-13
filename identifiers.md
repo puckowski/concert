@@ -11,8 +11,10 @@ Concert stores const identifiers in a location separate from all other identifie
 ```cpp
 int x;
 int range2;
+
 double _distance;
 double totalArea;
+
 string myName;
 string welcome_message;
 ```
