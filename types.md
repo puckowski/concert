@@ -2,10 +2,10 @@
 
 ## Primitive types
 
-int
-double
-string
-mutex
+- int
+- double
+- string
+- mutex
 
 ## Declaration
 
