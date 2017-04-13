@@ -10,7 +10,7 @@
 |3           |%         |Remainder                    |
 |4           |+         |Addition                     |
 |4           |-         |Subtraction                  |
-|5           |\|         |Bitwise OR                   |
+|5           |\|        |Bitwise OR                   |
 |5           |&         |Bitwise AND                  |
 |5           |^         |Bitwise XOR                  |
 
@@ -23,4 +23,69 @@ int currentValue = 5;
 
 # Value of array at index 0 will equal 5 after assignment.
 array[0] = array[currentIndex] + currentValue;
+```
+
+## Bitwise left shift example
+
+```cpp
+const int MULTIPLIER = 200 << 24;
+int shiftResult = (16 * 8) << 4;
+```
+
+## Bitwise right shift example
+
+```cpp
+const int RIGHT_MULTIPLIER = -200 >> 24;
+int secondShift = (32 / 2) >> 16;
+```
+
+## Multiplication example
+
+```cpp
+int area = 5 * 5;
+```
+
+## Division example
+
+```cpp
+int perimeter = 250 / 25;
+```
+
+## Remainder example
+
+```cpp
+int remainder = 1050 % 6;
+```
+
+## Addition example
+
+```cpp
+int sum = 5 + 25 + 125;
+```
+
+## Subtraction example
+
+```cpp
+int difference = 1000 - 100 - 10;
+```
+
+## Bitwise OR example
+
+```cpp
+# orResult equals 248 after assignment.
+int orResult = 72 | 184;
+```
+
+## Bitwise AND example
+
+```cpp
+# andResult equals 8 after assignment.
+int andResult = 72 & 184;
+```
+
+## Bitwise XOR example
+
+```cpp
+# xorResult equals 159 after assignment.
+int xorResult = 31 ^ 128;
 ```
