@@ -2,6 +2,6 @@
 
 Each function receives a unique scope. 
 
-## Main scope
+## Global scope
 
-Declarations outside of any function exist in the main scope. 
+Declarations outside of any function exist in the global scope. 
