@@ -68,3 +68,11 @@ function sum : using count, with int as toAdd -> result;
   count += toAdd;
 return count;
 ```
+
+Example "sum" function declaration using pass by reference shorthand "&". This "sum" function is equivalent to the example "sum" function above.
+
+```cpp
+function sum : &count, with int as toAdd -> result;
+  count += toAdd;
+return count;
+```
