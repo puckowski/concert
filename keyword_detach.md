@@ -25,7 +25,7 @@ int start = 0;
 int end = 5;
 
 while end <= 10;
-  detach calculateSumAndPrint : valArray, start, end;
+  detach "calculateSumAndPrint" : valArray, start, end;
   
   start += 5;
   end += 5;
