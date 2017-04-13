@@ -1,4 +1,4 @@
-![Concert Header Image](https://github.com/puckowski/concert/blob/master/Concert_Header.png)
+![Concert Header Image](https://raw.githubusercontent.com/puckowski/concert/master/Concert_Header.png)
 
 # Reference of language constructs
 
