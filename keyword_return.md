@@ -1,3 +1,5 @@
+[Home](https://puckowski.github.io/concert/) <span>&emsp;</span> [Keywords](https://puckowski.github.io/concert/keywords.html)
+
 # Keyword return
 
 ## Description
@@ -8,7 +10,7 @@ Return a value at the end of a function.
 
 ```cpp
 function simpleReturn;
-  # Simply return the value 5.
+    # Simply return the value 5.
 return 5;
 
 int toAssign;
