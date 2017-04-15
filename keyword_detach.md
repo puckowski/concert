@@ -1,3 +1,5 @@
+[Home](https://puckowski.github.io/concert/) <span>&emsp;</span> [Keywords](https://puckowski.github.io/concert/keywords.html)
+
 # Keyword detach
 
 ## Description
@@ -8,14 +10,14 @@ Separates the thread of execution from the current thread, allowing execution to
 
 ```cpp
 function calculateSumAndPrint : using valArray, with int as startIndex, with int as finalIndex;
-  int sum = 0;
+    int sum = 0;
   
-  while startIndex < finalIndex;
-    sum += valArray[startIndex];  
-    startIndex += 1;
-  end;
+    while startIndex < finalIndex;
+        sum += valArray[startIndex];  
+        startIndex += 1;
+    end;
   
-  println "Sum for range [", startIndex, ",", finalIndex, "] is: ", sum;
+    println "Sum for range [", startIndex, ",", finalIndex, "] is: ", sum;
 return;
 
 # Declare array of 10 integers with default value of 5.
@@ -25,9 +27,9 @@ int start = 0;
 int end = 5;
 
 while end <= 10;
-  detach "calculateSumAndPrint" : valArray, start, end;
+    detach "calculateSumAndPrint" : valArray, start, end;
   
-  start += 5;
-  end += 5;
+    start += 5;
+    end += 5;
 end;
 ```
