@@ -1,3 +1,5 @@
+[Home](https://puckowski.github.io/concert/) <span>&emsp;</span> [Keywords](https://puckowski.github.io/concert/keywords.html)
+
 # Keyword try
 
 ## Description
@@ -11,8 +13,8 @@ int dividend = 10;
 int divisor = 0;
 
 try;
-  int quotient = dividend / divisor;
+    int quotient = dividend / divisor;
 catch;
-  println "Exception occurred when calculating quotient.";
+    println "Exception occurred when calculating quotient.";
 end;
 ```
