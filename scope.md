@@ -1,3 +1,5 @@
+[Home](https://puckowski.github.io/concert/)
+
 # Scope
 
 Each function receives a unique scope. 
@@ -13,8 +15,8 @@ Declarations outside of any function exist in the global scope.
 int globalInt = 100;
 
 function printSum : int as left, int as right;
-  # The int "sum" exists within the scope of function "printSum"
-  int sum = left + right;
+    # The int "sum" exists within the scope of function "printSum"
+    int sum = left + right;
   
-  println sum;
+    println sum;
 return;
