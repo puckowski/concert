@@ -4,9 +4,9 @@
 
 Arrays are declared similarly to variables. Arrays of all primitive types, except for mutex, may be created. Arrays may be const.
 
-# Declaration
+## Declaration
 
-## int array declaration examples
+### int array declaration examples
 
 ```cpp
 # Declare array "xArr", size 5
@@ -19,7 +19,7 @@ int size = 10;
 int secondArr size;
 ```
 
-## double array declaration examples
+### double array declaration examples
 
 ```cpp
 # Declare array "dArr", size 5
@@ -32,7 +32,7 @@ int size = 10;
 double secondArr size;
 ```
 
-## string array declaration examples
+### string array declaration examples
 
 ```cpp
 # Declare array "sArr", size 5
@@ -45,9 +45,9 @@ int size = 10;
 string secondArr size;
 ```
 
-# Assignment
+## Assignment
 
-## int array assignment examples
+### int array assignment examples
 
 ```cpp
 # Declare array "xArr", size 5
@@ -63,7 +63,7 @@ int i = xArr[1];
 int n = xArr[secondArr[0]];
 ```
 
-## double array assignment examples
+### double array assignment examples
 
 ```cpp
 # Declare array "dArr", size 5
@@ -79,7 +79,7 @@ double d = dArr[1];
 double b = dArr[secondArr[0]];
 ```
 
-## string array assignment examples
+### string array assignment examples
 
 ```cpp
 # Declare array "sArr", size 5
