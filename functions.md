@@ -16,7 +16,7 @@ function hello;
 return;
 ```
 
-Example "simpleRet" function declaration.
+Example "simpleRet" function declaration:
 
 ```cpp
 function simpleRet;
