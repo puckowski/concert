@@ -15,9 +15,9 @@
 
 ```cpp
 if x == y;
-  print "x equals y";
+    print "x equals y";
 else; 
-  print "x does not equal y";
+    print "x does not equal y";
 end;
 ```
 
@@ -25,9 +25,9 @@ end;
 
 ```cpp
 if x != y;
-  print "x does not equal y";
+    print "x does not equal y";
 else; 
-  print "x equals y";
+    print "x equals y";
 end;
 ```
 
@@ -35,9 +35,9 @@ end;
 
 ```cpp
 if x < y;
-  print "x is less than y";
+    print "x is less than y";
 else; 
-  print "x is greater than or equal to y";
+    print "x is greater than or equal to y";
 end;
 ```
 
@@ -45,9 +45,9 @@ end;
 
 ```cpp
 if x > y;
-  print "x is greater than y";
+    print "x is greater than y";
 else; 
-  print "x is less than or equal to y";
+    print "x is less than or equal to y";
 end;
 ```
 
@@ -55,9 +55,9 @@ end;
 
 ```cpp
 if x <= y;
-  print "x is less than or equal to y";
+    print "x is less than or equal to y";
 else; 
-  print "x is greater than y";
+    print "x is greater than y";
 end;
 ```
 
@@ -65,8 +65,8 @@ end;
 
 ```cpp
 if x >= y;
-  print "x is greater than or equal to y";
+    print "x is greater than or equal to y";
 else; 
-  print "x is less than y";
+    print "x is less than y";
 end;
 ```
