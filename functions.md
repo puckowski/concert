@@ -1,3 +1,5 @@
+[Home](https://puckowski.github.io/concert/)
+
 # Functions
 
 Example "hello" function declaration:
@@ -14,20 +16,20 @@ function hello;
 return;
 ```
 
-Example "simpleRet" function declaration. Function stores return value in variable with identifier "x".
+Example "simpleRet" function declaration.
 
 ```cpp
-function simpleRet -> x;
+function simpleRet;
 ```
 
-Example "simpleRet" function:
+Example "simpleRet" function. Function returns the value 5.
 
 ```cpp
-function simpleRet -> x;
+function simpleRet;
 return 5;
 ```
 
-Example "formattedPrint" function declaration. Function accepts a string type parameter. The string paramater is a copy of the original data. The string parameter is assigned the identifer "msg" for the scope of the function.
+Example "formattedPrint" function declaration. Function accepts a string type parameter. The string parameter is pass by value. The string parameter is assigned the identifer "msg" for the scope of the function.
 
 ```cpp
 function formattedPrint : with string as msg;
@@ -55,16 +57,16 @@ function incrementVar : using toInc;
 return;
 ```
 
-Example "sum" function declaration. Function accepts two int type paramaters. The first int parameter is passed by reference. The second int parameter is passed by value and assigned the name "toAdd" for the scope of the function. The function returns a value, which is stored in the variable "result".
+Example "sum" function declaration. Function accepts two int type paramaters. The first int parameter is passed by reference. The second int parameter is passed by value and assigned the name "toAdd" for the scope of the function.
 
 ```cpp
-function sum : using count, with int as toAdd -> result;
+function sum : using count, with int as toAdd;
 ```
 
-Example "sum" function:
+Example "sum" function. The function returns the value count.
 
 ```cpp
-function sum : using count, with int as toAdd -> result;
+function sum : using count, with int as toAdd;
   count += toAdd;
 return count;
 ```
@@ -72,7 +74,7 @@ return count;
 Example "sum" function declaration using pass by reference shorthand "&". This "sum" function is equivalent to the example "sum" function above.
 
 ```cpp
-function sum : &count, with int as toAdd -> result;
+function sum : &count, with int as toAdd;
   count += toAdd;
 return count;
 ```
