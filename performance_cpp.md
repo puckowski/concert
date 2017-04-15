@@ -28,8 +28,7 @@ uint32_t adler32(const void* buf, size_t bufLength) {
      return (s2 << 16) | s1;
 }
 
-void main()
-{
+void main() {
     int hashAddress = adler32(WELCOME.c_str(), WELCOME.length());
 }
 ```
