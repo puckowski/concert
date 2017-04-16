@@ -15,6 +15,7 @@
 |5           |\|        |Bitwise OR                   |
 |5           |&         |Bitwise AND                  |
 |5           |^         |Bitwise XOR                  |
+|5           |~         |Binary ones complement       |
 
 ## Subscript example
 
@@ -90,4 +91,11 @@ int andResult = 72 & 184;
 ```cpp
 # xorResult equals 159 after assignment.
 int xorResult = 31 ^ 128;
+```
+
+## Binary ones complement example
+
+```cpp
+# onesComplementResult equals -51 after assignment.
+int onesComplementResult = ~50;
 ```
