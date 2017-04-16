@@ -1,12 +1,12 @@
 [Home](https://puckowski.github.io/concert/) <span>&emsp;</span> [Standard library](https://puckowski.github.io/concert/standard_library.html)
 
-# Input and output library
+# Input output library
 
 Provides standard input and output functions.
 
 ## Import
 
-The following statement may be used to import the input and output library:
+The following statement may be used to import the input output library:
 
 ```cpp
 import io;
