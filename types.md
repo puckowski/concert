@@ -9,6 +9,13 @@
 - string
 - mutex
 
+## Properties
+
+|Type   |Width in bits |
+|:------|:-------------|
+|int    |at least 32   |
+|double |at least 64   |
+
 ## Declaration
 
 int declaration examples:
