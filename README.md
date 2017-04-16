@@ -45,6 +45,8 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Types](types.md)
 
+[Arrays](arrays.md)
+
 [Comments](commands.md)
 
 [Identifiers](identifiers.md)
