@@ -47,6 +47,8 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Arrays](arrays.md)
 
+[Escape sequences](escape_sequences.md)
+
 [Comments](commands.md)
 
 [Identifiers](identifiers.md)
@@ -60,6 +62,8 @@ call adler32 : WELCOME, welcomeLength -> hash;
 ## Expressions
 
 [Assignment](assignment.md)
+
+[Operators](operators.md)
 
 [Operator precedence](operator_precedence.md)
 
