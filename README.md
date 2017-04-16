@@ -77,6 +77,12 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Standard library](standard_library.md)
 
+[String library](string_library.md)
+
+[Input output library](io_library.md)
+
+[Math library](math_library.md)
+
 ## Performance
 
 [Concert vs. C++](performance_cpp.md)
