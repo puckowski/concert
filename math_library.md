@@ -20,3 +20,36 @@ import math;
 | get_random    | Get a random integer                               |
 | int_to_double | Convert an integer to a double                     |
 | double_to_int | Convert a double to an integer                     |
+
+## Examples
+
+### seed_random
+
+```cpp
+call seed_random;
+```
+
+### get_random
+
+```cpp
+int rand;
+call get_random -> rand;
+```
+
+### int_to_double
+
+```cpp
+int iToD = 5;
+double tempDouble;
+
+call int_to_double : iToD -> tempDouble;
+```
+
+### double_to_int
+
+```cpp
+int dToI = -1;
+double tempDouble;
+
+call double_to_int : tempDouble -> dToI;
+```
