@@ -49,7 +49,7 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Escape sequences](escape_sequences.md)
 
-[Comments](commands.md)
+[Comments](comments.md)
 
 [Identifiers](identifiers.md)
 
