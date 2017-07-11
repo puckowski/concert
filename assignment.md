@@ -22,6 +22,18 @@ int x = 5;
 int temp = -25;
 ```
 
+## long assignment examples
+
+```cpp
+# Declare "l"
+long l;
+
+# Declare and initialize "l"
+long l = 5;
+
+long temp = -25;
+```
+
 ## double assignment examples
 
 ```cpp
