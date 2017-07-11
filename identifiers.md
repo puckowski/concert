@@ -14,6 +14,9 @@ Concert stores const identifiers in a location separate from all other identifie
 int x;
 int range2;
 
+long l;
+long largeInteger;
+
 double _distance;
 double totalArea;
 
@@ -25,6 +28,7 @@ string welcome_message;
 
 ```cpp
 const int DEFAULT_ITERATIONS = 10;
+const long ITERATIONS_MAX = 5000000000;
 const double PI = 3.14;
 const string DEFAULT_WELCOME = "Hello, world!";
 ```
