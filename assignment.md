@@ -2,14 +2,14 @@
     
 # Assignment
 
-| Operators |
-|:----------|
-|\=         |
-|+=         |
-|-=         |
-|\*=        |
-|\\=        |
-|~=         |
+| Operators | Name              |
+|:----------|:------------------|
+|\=         |Divide equals      |
+|+=         |Plus equals        |
+|-=         |Minus equals       |
+|\*=        |Multiply equals    |
+|\\=        |Divide equals      |
+|~=         |Bitwise NOT equals |
 
 ## int assignment examples
 
