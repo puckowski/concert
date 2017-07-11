@@ -3,12 +3,8 @@
 # Assignment
 
 | Operators |
-|-----------|
-|=          |
-|+=         |
-|-=         |
-|\*=        |
-|/=         |
+|:----------|
+|           |
 
 ## int assignment examples
 
