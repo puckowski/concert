@@ -4,12 +4,12 @@
 
 | Operators |
 |:----------|
+|\=         |
 |+=         |
 |-=         |
 |\*=        |
 |\=         |
 |~=         |
-|           |
 
 ## int assignment examples
 
