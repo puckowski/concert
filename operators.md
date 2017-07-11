@@ -7,7 +7,7 @@
 |[]        |Subscript                    |
 |<<        |Bitwise left shift           |
 |>>        |Bitwise right shift          |
-|*         |Multiplication               |
+|\*        |Multiplication               |
 |/         |Division                     |
 |%         |Remainder                    |
 |+         |Addition                     |
