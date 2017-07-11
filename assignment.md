@@ -4,6 +4,11 @@
 
 | Operators |
 |:----------|
+|=          |
+|           |
+|           |
+|           |
+|           |
 |           |
 
 ## int assignment examples
