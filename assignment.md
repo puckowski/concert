@@ -8,7 +8,7 @@
 |+=         |
 |-=         |
 |\*=        |
-|\=         |
+|\\=        |
 |~=         |
 
 ## int assignment examples
