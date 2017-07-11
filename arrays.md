@@ -19,6 +19,19 @@ int size = 10;
 int secondArr size;
 ```
 
+### long array declaration examples
+
+```cpp
+# Declare array "lArr", size 5
+long lArr 5;
+
+# Declare array "lArr", size 5, and initialize all values to 0
+long lArr 5 = 0;
+
+int size = 10;
+long secondArr size;
+```
+
 ### double array declaration examples
 
 ```cpp
