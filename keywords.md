@@ -28,3 +28,5 @@
 |const    |const value declaration                                      |[const details](keyword_const.md)       |
 |else     |if statement alternative branch declaration                  |[else details](keyword_else.md)         |
 |system   |execute system command                                       |[system details](keyword_system.md)     |
+|exec     |execute code                                                 |[exec details](keyword_exec.md)         |
+|exit     |terminate script or exit program immediately                 |[exit details](keyword_exit.md)         |
