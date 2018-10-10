@@ -4,7 +4,7 @@
 
 ## Description
 
-Exit main script immediately or return from included script.
+Exit the current script. Has effect of terminating program if run in main script.
 
 ## Example
 
