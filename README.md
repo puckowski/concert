@@ -61,13 +61,13 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 ## Expressions
 
-[Assignment](assignment.md)
+[Assignment](expressions/assignment.md)
 
-[Operators](operators.md)
+[Operators](expressions/operators.md)
 
-[Operator precedence](operator_precedence.md)
+[Operator precedence](expressions/operator_precedence.md)
 
-[Comparison](comparison.md)
+[Comparison](expressions/comparison.md)
 
 ## Functions
 
