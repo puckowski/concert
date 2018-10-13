@@ -43,17 +43,17 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 ## Basic concepts
 
-[Types](types.md)
+[Types](basic_concepts/types.md)
 
-[Arrays](arrays.md)
+[Arrays](basic_concepts/arrays.md)
 
-[Escape sequences](escape_sequences.md)
+[Escape sequences](basic_concepts/escape_sequences.md)
 
-[Comments](comments.md)
+[Comments](basic_concepts/comments.md)
 
-[Identifiers](identifiers.md)
+[Identifiers](basic_concepts/identifiers.md)
 
-[Scope](scope.md)
+[Scope](basic_concepts/scope.md)
 
 ## Keywords
 
