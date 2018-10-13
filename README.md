@@ -75,13 +75,13 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 ## Standard library
 
-[Standard library](standard_library.md)
+[Standard library](standard_library/standard_library.md)
 
-[String library](string_library.md)
+[String library](standard_library/string_library.md)
 
-[Input output library](io_library.md)
+[Input output library](standard_library/io_library.md)
 
-[Math library](math_library.md)
+[Math library](standard_library/math_library.md)
 
 ## Performance
 
