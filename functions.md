@@ -32,13 +32,13 @@ return 5;
 Example "formattedPrint" function declaration. Function accepts a string type parameter. The string parameter is pass by value. The string parameter is assigned the identifer "msg" for the scope of the function.
 
 ```cpp
-function formattedPrint : with string as msg;
+function formattedPrint : string as msg;
 ```
 
 Example "formattedPrint" function:
 
 ```cpp
-function formattedPrint : with string as msg;
+function formattedPrint : string as msg;
     println "Hello, " msg;
 return;
 ```
@@ -60,21 +60,13 @@ return;
 Example "sum" function declaration. Function accepts two int type parameters. The first int parameter is passed by reference. The second int parameter is passed by value and assigned the identifier "toAdd" for the scope of the function.
 
 ```cpp
-function sum : using count, with int as toAdd;
+function sum : using count, int as toAdd;
 ```
 
 Example "sum" function. The function returns the value count.
 
 ```cpp
-function sum : using count, with int as toAdd;
-    count += toAdd;
-return count;
-```
-
-Example "sum" function declaration using pass by reference shorthand "&". This "sum" function is equivalent to the example "sum" function above.
-
-```cpp
-function sum : &count, with int as toAdd;
+function sum : using count, int as toAdd;
     count += toAdd;
 return count;
 ```
