@@ -3,7 +3,6 @@
 # Test script
 
 ```cpp
-
 import string;
 import math;
 import io;
