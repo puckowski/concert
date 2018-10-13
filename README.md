@@ -86,3 +86,7 @@ call adler32 : WELCOME, welcomeLength -> hash;
 ## Performance
 
 [Concert vs. C++](performance_cpp.md)
+
+## Testing
+
+[Test script](test_script.md)
