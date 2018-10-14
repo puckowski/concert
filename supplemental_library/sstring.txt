@@ -1,0 +1,42 @@
+import math;
+import string;
+
+function reverseString : string as input;
+	string reversed = "";
+	string strTmp;
+	int len;
+
+	call length : input -> len;
+	len -= 1;
+
+	while len >= 0;
+		call char_at : input, len -> strTmp;
+		reversed += strTmp;
+		len -= 1;
+	end;
+	
+return reversed;
+
+function startsWith : string as input, string as startStr;
+	string firstChars;
+	int len;
+	string strTmp;
+	int index = 0;
+	
+	call length : startStr -> len;
+	
+	while len > 0;
+		call char_at : input, index -> strTmp;
+		firstChars += strTmp;
+		len -= 1;
+		index += 1;
+	end;
+	
+	int toReturn;
+	
+	if firstChars == startStr;
+		toReturn = 1;
+	else;
+		toReturn = 0;
+	end;
+return toReturn;
