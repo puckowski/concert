@@ -15,4 +15,14 @@ while 1 == 1;
     # Stop infinite while loop
     break; 
 end;
+
+# Infinite loop. Exit two end cases to break while loop.
+int x = 5;
+int y = 5;
+
+while 1 == 1;
+	if x == y;
+		break 2;
+	end;
+end;
 ```
