@@ -81,3 +81,59 @@ function substring : string as input, int as start, int as end;
 		start += 1;
 	end;
 return substr;
+
+function indexOf : string as input, string as substr;
+	int index = -1;
+	int len;
+	int inputLen;
+	string tmp;
+	
+	call length : substr -> len;
+	call length : input -> inputLen;
+	
+	int startIndex = 0;
+	int endIndex = len;
+
+	inputLen -= len;
+
+	while endIndex <= inputLen;
+		call substring : input, startIndex, endIndex -> tmp;
+
+		if tmp == substr;
+			index = startIndex;
+			index -= 1;
+			
+			break 2;
+		end;
+		
+		startIndex += 1;
+		endIndex += 1;
+	end;
+return index;
+
+function lastIndexOf : string as input, string as substr;
+	int index = -1;
+	int len;
+	int inputLen;
+	string tmp;
+	
+	call length : substr -> len;
+	call length : input -> inputLen;
+	
+	int startIndex = 0;
+	int endIndex = len;
+
+	inputLen -= len;
+
+	while endIndex <= inputLen;
+		call substring : input, startIndex, endIndex -> tmp;
+
+		if tmp == substr;
+			index = startIndex;
+			index -= 1;
+		end;
+		
+		startIndex += 1;
+		endIndex += 1;
+	end;
+return index;

@@ -74,3 +74,5 @@ function convertIntToHex : int as input, int as newBase;
 	string reversed;
 	call reverseString : strValue -> reversed;
 return reversed;
+
+exit;
