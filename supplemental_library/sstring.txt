@@ -40,3 +40,33 @@ function startsWith : string as input, string as startStr;
 		toReturn = 0;
 	end;
 return toReturn;
+
+function endsWith : string as input, string as startStr;
+	string firstChars;
+	int lenStr;
+	int lenInput;
+	int start;
+	string strTmp;
+	
+	call length : startStr -> lenStr;
+	call length : input -> lenInput;
+	
+	lenInput -= lenStr;
+	
+	start = lenInput;
+	call length : input -> lenInput;
+	
+	while start < lenInput;
+		call char_at : input, start -> strTmp;
+		firstChars += strTmp;
+		start += 1;
+	end;
+	
+	int toReturn;
+	
+	if firstChars == startStr;
+		toReturn = 1;
+	else;
+		toReturn = 0;
+	end;
+return toReturn;
