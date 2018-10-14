@@ -70,3 +70,14 @@ function endsWith : string as input, string as startStr;
 		toReturn = 0;
 	end;
 return toReturn;
+
+function substring : string as input, int as start, int as end;
+	string substr = "";
+	string strTmp;
+
+	while start < end;
+		call char_at : input, start -> strTmp;
+		substr += strTmp;
+		start += 1;
+	end;
+return substr;
