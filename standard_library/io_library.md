@@ -38,6 +38,9 @@ import io;
 
 ```cpp
 call open_file : "create_file_test.txt";
+
+# Open binary file
+call open_file : "test.bin" 1;
 ```
 
 ### close_file
