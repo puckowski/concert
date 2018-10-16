@@ -27,6 +27,8 @@ import string;
 | int_to_string    | Convert an integer to a string                         |
 | double_to_string | Convert a double to a string                           |
 | char_to_int      | Convert a character to an integer                      |
+| to_lower_case    | Convert a string to lower case                         |
+| to_upper_case    | Convert a string to upper case                         |
 
 ## Examples
 
@@ -116,4 +118,18 @@ call double_to_string : dToS -> tempString;
 string firstChar = "?";
 int charInt = -1;
 call char_to_int : firstChar -> charInt;
+```
+
+### to_lower_case
+
+```cpp
+string toLower = "ABCdefGHI";
+call to_lower_case : toLower -> toLower;
+```
+
+### to_upper_case
+
+```cpp
+string toUpper = "abcDEFghi";
+call to_upper_case : toUpper -> toUpper;
 ```
