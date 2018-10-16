@@ -58,3 +58,12 @@ string s = "Hello, world!";
 
 string temp = "\",Hello,\nworld!\"";
 ```
+
+## Complex assignment examples
+
+```cpp
+int a = 25;
+int b = 1033;
+int c = (a * b) + 56 / 2;
+int d = (2 + (c - 1000)) - 9;
+```

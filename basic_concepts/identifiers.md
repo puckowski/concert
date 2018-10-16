@@ -2,7 +2,7 @@
 
 # Identifiers
 
-Identifiers are any sequence of uninterrupted characters separated by space characters.
+Identifiers are any sequence of uninterrupted characters separated by space characters. An identifier should not be a keyword.
 
 ## const identifiers
 
