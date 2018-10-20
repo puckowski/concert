@@ -10,6 +10,18 @@
 - string
 - mutex
 
+## Null values
+
+There are no null values in Concert. The following table defines default values.
+
+|Type   |Default value    |
+|:------|:----------------|
+|int    |undefined 32-bit |
+|long   |undefined 64-bit |
+|double |undefined 64-bit |
+|string |Empty string ""  |
+|mutex  |Not applicable   |
+
 ## Properties
 
 |Type   |Width in bits |
