@@ -83,6 +83,10 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Math library](standard_library/math_library.md)
 
+## Examples
+
+[Code examples](code_examples.md)
+
 ## Performance
 
 [Concert vs. C++](performance_cpp.md)
