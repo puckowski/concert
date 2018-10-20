@@ -247,7 +247,6 @@ function replaceFirst : string as input, string as substr, string as toReplace;
 	end;
 return replaced;
 
-
 function convertIntToBase : int as input, int as newBase;
 	string strValue = "";
 	string strTmp;
