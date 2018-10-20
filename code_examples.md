@@ -16,7 +16,6 @@ function reverseString : string as input;
 		reversed += strTmp;
 		len -= 1;
 	end;
-	
 return reversed;
 
 function startsWith : string as input, string as startStr;
