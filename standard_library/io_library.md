@@ -31,6 +31,7 @@ import io;
 | remove_file       | Remove a file                                                     |
 | rename_file       | Rename a file                                                     |
 | tell_file_pointer | Return the byte position of the binary file pointer               |
+| create_directory  | Create a directory                                                |
 
 ## Examples
 
@@ -151,4 +152,12 @@ call open_file : "create_file_test.txt", OPEN_AS_BINARY;
 int filePointer = 0;
 call tell_file_pointer : "create_file_test.txt" -> filePointer;
 call close_file : "create_file_test.txt";
+```
+
+### create_directory
+
+```cpp
+string newDirectory = "data_dir";
+int directoryResult;
+call create_directory : newDirectory -> directoryResult;
 ```
