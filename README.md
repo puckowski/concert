@@ -83,13 +83,13 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Math library](standard_library/math_library.md)
 
-## Interpreter
-
-[Usage](interpreter_usage.md)
-
 ## Examples
 
 [Code examples](code_examples.md)
+
+## Interpreter
+
+[Usage](interpreter_usage.md)
 
 ## Performance
 
