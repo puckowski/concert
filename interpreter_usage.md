@@ -21,3 +21,7 @@ call stack:
 10148_convertIntToHex
 10148_main
 ```
+
+### With debugging disabled
+
+Concert.exe filename 0
