@@ -6,6 +6,14 @@
 
 Note: there must be only one return statement per function. The return statement must be at the end of the function.
 
+## Generics
+
+Note: if the provided parameter definition is not a valid datatype, it is assumed to be a generic. Generic names can be any valid identifier.
+
+## Mutex parameters
+
+Note: a parameter can be any datatype except for a mutex.
+
 Example "hello" function declaration:
 
 ```cpp
