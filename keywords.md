@@ -29,5 +29,5 @@
 |else       |if statement alternative branch declaration                  |[else details](keywords/keyword_else.md)            |
 |system     |execute system command                                       |[system details](keywords/keyword_system.md)        |
 |exec       |execute code                                                 |[exec details](keywords/keyword_exec.md)            |
-|exit       |terminate script or exit program immediately                 |[exit details](keywords/keyword_exit.md)            |
 |instanceof |determine the type of a variable                             |[instanceof details](keywords/keyword_instanceof.md)|
+|exit       |terminate script or exit program immediately                 |[exit details](keywords/keyword_exit.md)            |
