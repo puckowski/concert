@@ -14,6 +14,8 @@ Note: if the provided parameter definition is not a valid datatype, it is assume
 
 Note: a parameter can be any datatype except for a mutex.
 
+## Examples
+
 Example "hello" function declaration:
 
 ```cpp
@@ -82,6 +84,8 @@ function sum : using count, int as toAdd;
     count += toAdd;
 return count;
 ```
+
+## Example generic functions
 
 Example generic "sumArray" function. The function returns array sum, whether it be an array of integers, longs, doubles, or strings.
 
