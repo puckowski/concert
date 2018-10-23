@@ -2,6 +2,10 @@
 
 # Functions
 
+## Return value
+
+Note: there must be only one return statement per function. The return statement must be at the end of the function.
+
 Example "hello" function declaration:
 
 ```cpp
@@ -69,4 +73,45 @@ Example "sum" function. The function returns the value count.
 function sum : using count, int as toAdd;
     count += toAdd;
 return count;
+```
+
+Example generic "sumArray" function. The function returns array sum, whether it be an array of integers, longs, doubles, or strings.
+
+```cpp
+function sumArray : array as toSum, int as length, value as toInc;	
+	string type;
+	instanceof toSum type;
+		
+	if type == "int";
+		int i = 0;
+		while i < length;
+			toInc += toSum[i];
+			i += 1;
+		end;
+	end;
+	
+	if type == "long";
+		int i = 0;
+		while i < length;
+			toInc += toSum[i];
+			i += 1;
+		end;
+	end;
+	
+	if type == "double";
+		int i = 0;
+		while i < length;
+			toInc += toSum[i];
+			i += 1;
+		end;
+	end;
+	
+	if type == "string";
+		int i = 0;
+		while i < length;
+			toInc += toSum[i];
+			i += 1;
+		end;
+	end;
+return toInc;
 ```

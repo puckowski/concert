@@ -4,6 +4,10 @@
 
 Arrays are declared similarly to variables. Arrays of all primitive types, except for mutex, may be created. Arrays may be const.
 
+## Mutex arrays
+
+Arrays of all primitive types except for mutexes are allowed.
+
 ## Declaration
 
 ### int array declaration examples
