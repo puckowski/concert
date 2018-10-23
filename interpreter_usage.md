@@ -10,6 +10,8 @@ Concert.exe filename
 
 Concert.exe filename 1
 
+Note: debugging may reduce performance by as much as 300%.
+
 Sample debugging output:
 
 ```
@@ -21,6 +23,8 @@ call stack:
 10148_convertIntToHex
 10148_main
 ```
+
+Note: debugging execution line excludes empty lines.
 
 ### With debugging disabled
 
