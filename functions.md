@@ -115,3 +115,15 @@ function sumArray : array as toSum, int as length, value as toInc;
 	end;
 return toInc;
 ```
+
+As the above function does the same operation for each datatype, the function can be simplified to the following.
+
+```cpp
+function sumArray : array as toSum, int as length, value as toInc;	
+	int i = 0;
+	while i < length;
+		toInc += toSum[i];
+		i += 1;
+	end;
+return toInc;
+```
