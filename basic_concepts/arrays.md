@@ -8,6 +8,10 @@ Arrays are declared similarly to variables. Arrays of all primitive types, excep
 
 Arrays of all primitive types except for mutexes are allowed.
 
+## Multidimensional arrays
+
+Currently Concert does not allow for creation multidimensional arrays.
+
 ## Declaration
 
 ### int array declaration examples

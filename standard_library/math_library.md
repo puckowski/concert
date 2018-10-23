@@ -20,6 +20,8 @@ import math;
 | get_random    | Get a random integer                               |
 | int_to_double | Convert an integer to a double                     |
 | double_to_int | Convert a double to an integer                     |
+| int_to_long   | Convert an integer to a long                       |
+| long_to_int   | Convert a long to an integer                       |
 
 ## Examples
 
@@ -52,4 +54,22 @@ int dToI = -1;
 double tempDouble;
 
 call double_to_int : tempDouble -> dToI;
+```
+
+### int_to_long
+
+```cpp
+int toLong = 12345;
+long l;
+
+call int_to_long : toLong -> l;
+```
+
+### long_to_int
+
+```cpp
+long toInt = 349674032692;
+int i;
+
+call long_to_int : toInt -> i;
 ```

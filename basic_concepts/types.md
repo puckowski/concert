@@ -30,6 +30,15 @@ There are no null values in Concert. The following table defines default values.
 |long   |at least 64   |
 |double |at least 64   |
 
+## Implicit casts
+
+The following may be implicitly cast without a library call.
+
+|From type|To type|
+|:--------|:------|
+|int      |long   |
+|long     |int    |
+
 ## Declaration
 
 int declaration examples:
