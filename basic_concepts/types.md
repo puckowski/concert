@@ -32,7 +32,7 @@ There are no null values in Concert. The following table defines default values.
 
 ## Implicit casts
 
-The following may be implicitly cast without a library call.
+The following may be implicitly cast without a library call. Note that overflows may occur.
 
 |From type|To type|
 |:--------|:------|
