@@ -16,4 +16,10 @@ new "coordinate" "c1";
 
 c1.x = 101;
 c1.y = 202;
+
+string alternateAccess = "c1";
+
+# Modify x and y using a variable name which has a reference to struct instance "c1"
+alternateAccess.x = 303;
+alternateAccess.y = 404;
 ```
