@@ -32,3 +32,4 @@
 |instanceof |determine the type of a variable                             |[instanceof details](keywords/keyword_instanceof.md)|
 |exit       |terminate script or exit program immediately                 |[exit details](keywords/keyword_exit.md)            |
 |new        |create a new struct                                          |[new details](keywords/keyword_new.md)              |
+|struct     |define the template for a struct                             |[struct details](keywords/keyword_struct.md)        |
