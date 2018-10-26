@@ -4,6 +4,7 @@
   
 | Precedence | Operator | Description                 |
 |:-----------|:---------|:----------------------------|
+|1           |.         |Scope                        |
 |1           |[]        |Subscript                    |
 |2           |<<        |Bitwise left shift           |
 |2           |>>        |Bitwise right shift          |
@@ -16,6 +17,19 @@
 |5           |&         |Bitwise AND                  |
 |5           |^         |Bitwise XOR                  |
 |5           |~         |Binary ones complement       |
+
+## Scope example
+
+```cpp
+struct "coordinate";
+	int x;
+	int y;
+struct;
+
+new "coordinate" "c1";
+
+c1.x = 1313;
+```
 
 ## Subscript example
 

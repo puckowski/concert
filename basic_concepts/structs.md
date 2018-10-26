@@ -7,12 +7,12 @@ Concert supports creation of structs, or structures. Structs are templates for c
 ## Struct examples
 
 ```cpp
-struct coordinate;
+struct "coordinate";
 	int x;
 	int y;
 struct;
 
-new coordinate c1;
+new "coordinate" "c1";
 
 c1.x = 101;
 c1.y = 202;

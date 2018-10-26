@@ -4,6 +4,7 @@
   
 | Operator | Description                 |
 |:---------|:----------------------------|
+|.         |Scope                        |
 |[]        |Subscript                    |
 |<<        |Bitwise left shift           |
 |>>        |Bitwise right shift          |
