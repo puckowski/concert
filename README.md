@@ -100,3 +100,7 @@ call adler32 : WELCOME, welcomeLength -> hash;
 ## Testing
 
 [Test script](test_script.md)
+
+## Other scripts
+
+[Text adventure](text_adventure.md)
