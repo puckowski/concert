@@ -55,6 +55,8 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Scope](basic_concepts/scope.md)
 
+[Structs](basic_concepts/structs.md)
+
 ## Keywords
 
 [Keywords](keywords.md)
