@@ -11,6 +11,6 @@ Delete a declared variable from current scope and free allocated memory.
 ```cpp
 int globalScopeVar = 0;
 
-delete globalScopeVar;
+delete "globalScopeVar";
 # int globalScopeVar no longer exists and no longer uses memory
 ```
