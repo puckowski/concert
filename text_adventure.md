@@ -261,7 +261,6 @@ while input != "exit";
 	if input != "";	
 		if input == "help";
 			println "Type name of exit to go to new room.";
-			int cs = 2;
 			call printHelp : COMMAND_SIZE, COMMANDS;
 
 			break 7;
