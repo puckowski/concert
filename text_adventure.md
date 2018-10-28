@@ -14,17 +14,17 @@ import io;
 call seed_random;
 
 const int COMMAND_SIZE = 10;
-const string commands COMMAND_SIZE;
-commands[0] = "help";
-commands[1] = "take";
-commands[2] = "use";
-commands[3] = "north";
-commands[4] = "east";
-commands[5] = "south";
-commands[6] = "west";
-commands[7] = "exit";
-commands[8] = "attack";
-commands[9] = "coins";
+const string COMMANDS COMMAND_SIZE;
+COMMANDS[0] = "help";
+COMMANDS[1] = "take";
+COMMANDS[2] = "use";
+COMMANDS[3] = "north";
+COMMANDS[4] = "east";
+COMMANDS[5] = "south";
+COMMANDS[6] = "west";
+COMMANDS[7] = "exit";
+COMMANDS[8] = "attack";
+COMMANDS[9] = "coins";
 
 struct "player";
 	int health;
@@ -201,13 +201,13 @@ function takeItem : string as currentRoom, string as item;
 	end;
 return;
 
-function printHelp : using COMMAND_SIZE, using commands;
+function printHelp : using COMMAND_SIZE, using COMMANDS;
 	print "Commands: ";
 	
 	int i = 0;
 	
 	while i < COMMAND_SIZE;
-		print commands[i], " ";
+		print COMMANDS[i], " ";
 		i += 1;
 	end;
 	
@@ -262,7 +262,7 @@ while input != "exit";
 		if input == "help";
 			println "Type name of exit to go to new room.";
 			int cs = 2;
-			call printHelp : COMMAND_SIZE, commands;
+			call printHelp : COMMAND_SIZE, COMMANDS;
 
 			break 7;
 		end;
