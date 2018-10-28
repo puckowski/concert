@@ -11,7 +11,9 @@ import math;
 import string;
 import io;
 
-const int COMMAND_SIZE = 8;
+call seed_random;
+
+const int COMMAND_SIZE = 10;
 const string commands COMMAND_SIZE;
 commands[0] = "help";
 commands[1] = "take";
@@ -21,12 +23,16 @@ commands[4] = "east";
 commands[5] = "south";
 commands[6] = "west";
 commands[7] = "exit";
+commands[8] = "attack";
+commands[9] = "coins";
 
 struct "player";
 	int health;
 	string inventory 5;
 	int inventoryIndex;
 	int inventoryCapacity;
+	int damage;
+	int coins;
 struct;
 
 struct "item";
@@ -41,6 +47,15 @@ struct "room";
 	string east;
 	string south;
 	string west;
+	string monster;
+struct;
+
+struct "monster";
+	string name;
+	int currentHealth;
+	int maxHealth;
+	int damage;
+	int reward;
 struct;
 
 new "room" "r1";
@@ -53,6 +68,7 @@ r1.north = "r2";
 r1.east = "";
 r1.south = "";
 r1.west = "";
+r1.monster = "m1";
 
 r2.description = "Hallway";
 r2.north = "r3";
@@ -72,9 +88,20 @@ i1.name = "Amulet";
 i1.healValue = 5;
 
 new "player" "p1";
+
 p1.health = 10;
 p1.inventoryCapacity = 5;
 p1.inventoryIndex = 0;
+p1.damage = 7;
+p1.coins = 0;
+
+new "monster" "m1";
+
+m1.name = "Goblin";
+m1.currentHealth = 6;
+m1.maxHealth = 6;
+m1.damage = 3;
+m1.reward = 10;
 
 string currentRoom = "r1";
 
@@ -84,6 +111,11 @@ function printRooms : string as forRoom;
 	if forRoom.item != "";
 		string item = forRoom.item;
 		println "There is something on the ground: ", item.name;
+	end;
+	
+	if forRoom.monster != "";
+		string monster = forRoom.monster;
+		println "There is a ", monster.name, " spawn here.";
 	end;
 	
 	print "Rooms available: ";
@@ -182,6 +214,37 @@ function printHelp : using COMMAND_SIZE, using commands;
 	println "";
 return;
 
+function attackEnemy : string as currentRoom;
+	string monster = currentRoom.monster;
+	
+	if monster != "";
+		println "You attack the ", monster.name, ".";
+		
+		int damage = monster.damage;
+		p1.health -= damage;
+		println "You take ", damage, " damage.";
+		
+		if p1.health <= 0;
+			println "You were slain!";
+		else;
+			int att;
+			call get_random -> att;
+			att = att % p1.damage;
+			
+			monster.currentHealth -= att;
+			println "The ", monster.name, " took ", att, " damage.";
+			
+			if monster.currentHealth <= 0;
+				println "You have slain the ", monster.name, "!";
+				p1.coins += monster.reward;
+				println "You received ", monster.reward, " coins.";
+				
+				monster.currentHealth = monster.maxHealth;
+			end;
+		end;
+	end;
+return;
+
 string input;
 
 println "Welcome to Concert Simple Text Adventure!";
@@ -189,10 +252,6 @@ println "Type \"help\" for help.";
 
 # Game loop
 while input != "exit";
-	if p1.health == 0;
-		break;
-	end;
-
 	call printRooms : currentRoom;
 
 	println "Go where?";
@@ -230,6 +289,22 @@ while input != "exit";
 
 				call takeItem : currentRoom, item;
 			end;
+			
+			break 4;
+		end;
+		
+		if input == "attack";
+			call attackEnemy : currentRoom;
+			
+			if p1.health <= 0;
+				break;
+			end;
+	
+			break 4;
+		end;
+		
+		if input == "coins";
+			println "You have ", p1.coins, " coins.";
 			
 			break 3;
 		end;
