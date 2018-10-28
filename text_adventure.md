@@ -12,7 +12,7 @@ import string;
 import io;
 
 const int COMMAND_SIZE = 8;
-string commands COMMAND_SIZE;
+const string commands COMMAND_SIZE;
 commands[0] = "help";
 commands[1] = "take";
 commands[2] = "use";
@@ -27,7 +27,6 @@ struct "player";
 	string inventory 5;
 	int inventoryIndex;
 	int inventoryCapacity;
-	int index;
 struct;
 
 struct "item";
@@ -140,30 +139,30 @@ return newRoom;
 
 function useItem : string as toUse;
 	int i = 0;
-	p1.index = 0;
+	int index = 0;
 			
 	while i < p1.inventoryCapacity;
-		string item = p1.inventory[index];
+		string item = p1.inventory[useItem.index];
 								
 		if item != "";
 			if item.name == toUse;	
 				println "Used: ", item.name;
 				
-				p1.inventory[index] = "";
+				p1.inventory[useItem.index] = "";
 				p1.health += item.healValue;
 				
 				println "Health: ", p1.health;
 			end;			
 		end;
 					
-		p1.index += 1;
+		index += 1;
 		i += 1;
 	end;
 return;
 
 function takeItem : string as currentRoom, string as item;
 	if p1.inventoryIndex < p1.inventoryCapacity;
-		p1.inventory[inventoryIndex] = item;
+		p1.inventory[p1.inventoryIndex] = item;
 		p1.inventoryIndex += 1;
 					
 		currentRoom.item = "";
@@ -204,7 +203,7 @@ while input != "exit";
 		if input == "help";
 			println "Type name of exit to go to new room.";
 			int cs = 2;
-			call printHelp;
+			call printHelp : COMMAND_SIZE, commands;
 
 			break 7;
 		end;
