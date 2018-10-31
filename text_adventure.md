@@ -367,10 +367,14 @@ while input != "exit";
 		if input == "help";
 			println "Type name of exit to go to new room.";
 			call printHelp : COMMAND_SIZE, COMMANDS;
+			
+			continue;
 		end;
 		
 		if input == "health";
 			println "Health: ", p1.health;
+			
+			continue;
 		end;
 		
 		if input == "use";	
@@ -379,6 +383,8 @@ while input != "exit";
 			readln input;
 			
 			call useItem : input;
+			
+			continue;
 		end;
 		
 		if input == "take";
@@ -387,6 +393,8 @@ while input != "exit";
 
 				call takeItem : currentRoom, item;
 			end;
+			
+			continue;
 		end;
 		
 		if input == "attack";
@@ -395,10 +403,14 @@ while input != "exit";
 			if p1.health <= 0;
 				break;
 			end;
+			
+			continue;
 		end;
 		
 		if input == "coins";
 			println "You have ", p1.coins, " coins.";
+			
+			continue;
 		end;
 		
 		string newRoom;
