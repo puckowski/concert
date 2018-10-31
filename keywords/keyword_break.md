@@ -4,7 +4,7 @@
 
 ## Description
 
-Stops execution of the enclosing code block.
+Stops execution of the enclosing loop.
 
 ## Example
 
