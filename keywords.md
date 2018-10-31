@@ -24,7 +24,7 @@
 |end        |end a function, while loop, try/catch block, or if statement |[end details](keywords/keyword_end.md)              |
 |catch      |catch an exception after a try block                         |[catch details](keywords/keyword_catch.md)          |
 |try        |try executing potentially unsafe code                        |[try details](keywords/keyword_try.md)              |
-|break      |seek to next end keyword                                     |[break details](keywords/keyword_break.md)          |
+|break      |break enclosing loop                                         |[break details](keywords/keyword_break.md)          |
 |const      |const value declaration                                      |[const details](keywords/keyword_const.md)          |
 |else       |if statement alternative branch declaration                  |[else details](keywords/keyword_else.md)            |
 |system     |execute system command                                       |[system details](keywords/keyword_system.md)        |
@@ -33,3 +33,4 @@
 |exit       |terminate script or exit program immediately                 |[exit details](keywords/keyword_exit.md)            |
 |new        |create a new struct                                          |[new details](keywords/keyword_new.md)              |
 |struct     |define the template for a struct                             |[struct details](keywords/keyword_struct.md)        |
+|continue   |restart enclosing loop                                       |[continue details](keywords/keyword_continue.md)    |
