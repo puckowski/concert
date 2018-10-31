@@ -13,6 +13,8 @@ import io;
 
 call seed_random;
 
+const int INVENTORY_CAPACITY = 5;
+
 const int COMMAND_SIZE = 10;
 const string COMMANDS COMMAND_SIZE;
 COMMANDS[0] = "help";
@@ -90,7 +92,7 @@ i1.healValue = 5;
 new "player" "p1";
 
 p1.health = 10;
-p1.inventoryCapacity = 5;
+p1.inventoryCapacity = INVENTORY_CAPACITY;
 p1.inventoryIndex = 0;
 p1.damage = 7;
 p1.coins = 0;
@@ -193,11 +195,26 @@ function useItem : string as toUse;
 return;
 
 function takeItem : string as currentRoom, string as item;
-	if p1.inventoryIndex < p1.inventoryCapacity;
-		p1.inventory[p1.inventoryIndex] = item;
-		p1.inventoryIndex += 1;
+	int i = 0;
+	int took = 0;
+	
+	while i < p1.inventoryCapacity;
+		if p1.inventory[takeItem.i] == "";
+			p1.inventory[takeItem.i] = item;
+			p1.inventoryIndex += 1;
 					
-		currentRoom.item = "";
+			currentRoom.item = "";
+			took = 1;
+			break;
+		end;
+		
+		i += 1;
+	end;
+	
+	if took == 1;
+		println "You took the ", item.name, ".";
+	else;
+		println "Your inventory is full.";
 	end;
 return;
 
@@ -245,6 +262,94 @@ function attackEnemy : string as currentRoom;
 	end;
 return;
 
+function readConfigurationFile;
+	int fileExist;
+	call is_file_exist : "concert_adventure.cfg" -> fileExist;
+
+	if fileExist == 1;
+		call open_file : "concert_adventure.cfg";
+		
+		int isOpen;
+		call is_open : "concert_adventure.cfg" -> isOpen;
+		
+		if isOpen == 1;
+			string line;
+		
+			call get_line : "concert_adventure.cfg" -> line;
+			int fileHealth;
+			call to_int : line -> fileHealth;
+			
+			# If not dead...
+			if fileHealth > 0;
+				p1.health = fileHealth;
+				
+				call get_line : "concert_adventure.cfg" -> line;
+				int fileInventoryIndex;
+				call to_int : line -> fileInventoryIndex;
+				p1.inventoryIndex = fileInventoryIndex;
+				
+				call get_line : "concert_adventure.cfg" -> line;
+				int fileCoins;
+				call to_int : line -> fileCoins;
+				p1.coins = fileCoins;
+				
+				int invIndex = 0;
+				while invIndex < p1.inventoryCapacity;
+					call get_line : "concert_adventure.cfg" -> line;
+					p1.inventory[readConfigurationFile.invIndex] = line;
+					invIndex += 1;
+				end;
+			end;
+			
+			call close_file : "concert_adventure.cfg";
+		else;
+			println "Failed to read configuration file.";
+		end;
+	end;
+return;
+
+function writeConfigurationFile;
+	call remove_file : "concert_adventure.cfg";
+	call create_file : "concert_adventure.cfg";
+	
+	call open_file : "concert_adventure.cfg";
+	
+	int isOpen;
+	call is_open : "concert_adventure.cfg" -> isOpen;
+	
+	if isOpen == 1;
+		string toWrite;
+		
+		call int_to_string : p1.health -> toWrite;
+		call write_string : "concert_adventure.cfg", toWrite;
+		call write_string : "concert_adventure.cfg", "\n";
+		
+		call int_to_string : p1.inventoryIndex -> toWrite;
+		call write_string : "concert_adventure.cfg", toWrite;
+		call write_string : "concert_adventure.cfg", "\n";
+		
+		call int_to_string : p1.coins -> toWrite;
+		call write_string : "concert_adventure.cfg", toWrite;
+		call write_string : "concert_adventure.cfg", "\n";
+		
+		int invIndex = 0;
+		while invIndex < p1.inventoryCapacity;
+			call write_string : "concert_adventure.cfg", p1.inventory[writeConfigurationFile.invIndex];
+			invIndex += 1;
+			
+			if invIndex != p1.inventoryCapacity;
+				call write_string : "concert_adventure.cfg", "\n";
+			end;
+		end;
+		
+		call close_file : "concert_adventure.cfg";
+	else;
+		println "Failed to save configuration file.";
+	end;
+return;
+
+call readConfigurationFile;
+
 string input;
 
 println "Welcome to Concert Simple Text Adventure!";
@@ -262,14 +367,10 @@ while input != "exit";
 		if input == "help";
 			println "Type name of exit to go to new room.";
 			call printHelp : COMMAND_SIZE, COMMANDS;
-
-			break 7;
 		end;
 		
 		if input == "health";
 			println "Health: ", p1.health;
-		
-			break 6;
 		end;
 		
 		if input == "use";	
@@ -278,8 +379,6 @@ while input != "exit";
 			readln input;
 			
 			call useItem : input;
-			
-			break 5;
 		end;
 		
 		if input == "take";
@@ -288,8 +387,6 @@ while input != "exit";
 
 				call takeItem : currentRoom, item;
 			end;
-			
-			break 4;
 		end;
 		
 		if input == "attack";
@@ -298,14 +395,10 @@ while input != "exit";
 			if p1.health <= 0;
 				break;
 			end;
-	
-			break 4;
 		end;
 		
 		if input == "coins";
 			println "You have ", p1.coins, " coins.";
-			
-			break 3;
 		end;
 		
 		string newRoom;
@@ -316,6 +409,8 @@ while input != "exit";
 		end;
 	end;
 end;
+
+call writeConfigurationFile;
 
 println "Goodbye!";
 ```
