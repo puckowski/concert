@@ -104,4 +104,5 @@ call adler32 : WELCOME, welcomeLength -> hash;
 ## Other scripts
 
 [Text adventure](text_adventure.md)
+
 [Basic linter](basic_linter.md)
