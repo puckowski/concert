@@ -29,3 +29,7 @@ Note: debugging execution line excludes empty lines.
 ### With debugging disabled
 
 Concert.exe filename 0
+
+### With program arguments
+
+Concert.exe filename 0 input.json 1024

@@ -57,6 +57,8 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 [Structs](basic_concepts/structs.md)
 
+[Arguments](basic_concepts/arguments.md)
+
 ## Keywords
 
 [Keywords](keywords.md)
@@ -103,6 +105,6 @@ call adler32 : WELCOME, welcomeLength -> hash;
 
 ## Other scripts
 
-[Text adventure](text_adventure.md)
+[Text adventure](other_scripts/text_adventure.md)
 
-[Basic linter](basic_linter.md)
+[Basic linter](other_scripts/basic_linter.md)
