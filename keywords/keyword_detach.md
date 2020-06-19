@@ -9,7 +9,7 @@ Separates the thread of execution from the current thread, allowing execution to
 ## Example
 
 ```cpp
-function calculateSumAndPrint : using valArray, with int as startIndex, with int as finalIndex;
+function calculateSumAndPrint : using valArray, int as startIndex, int as finalIndex;
     int sum = 0;
   
     while startIndex < finalIndex;
